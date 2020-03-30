@@ -29,14 +29,14 @@
 /gate/application/setTimeStart     0.     s
 /gate/application/setTimeStop      10   s
 
-/gate/application/setTotalNumberOfPrimaries 1000000
-#/gate/application/setTotalNumberOfPrimaries 10000000
+/gate/application/setTotalNumberOfPrimaries  {GAMMA_NUM} 
+#/gate/application/setTotalNumberOfPrimaries 100000
 #/gate/application/setTotalNumberOfPrimaries 1000000
 #/gate/application/setTotalNumberOfPrimaries 10000000
 #/gate/application/setNumberOfPrimariesPerRun 100
 
 
-#/gate/application/setTimeSlice 3600 s
+##gate/application/setTimeSlice 3600 s
 #/gate/application/setTimeStop 3600 s
 ####/gate/application/startDAQCluster 3599 3600 0 s
 /gate/application/startDAQ

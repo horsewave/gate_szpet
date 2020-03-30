@@ -8,10 +8,12 @@
 
 # The path for single job submition.
 #Note: you have to have the single job script which will save you a lot of time.
-PATH_GATE_MACRO="/data/simulation/home/mabo/software/src/gate/ihep_human_tof_pet_sz/"
+PATH_GATE_MACRO="/data/simulation/home/mabo/software/src/gate/ihep_human_tof_pet_sz"
+SINGLE_CORE_JOB_SH="/ihep_cluster_singlecore_job_pbs.sh"
+PATH_SINGLE_CORE_JOB_SH=$PATH_GATE_MACRO$SINGLE_CORE_JOB_SH
 
 #set the cpu cores you want to use.
-CPU_NUM=3
+CPU_NUM=30
 i=1
 while(( ${i}<=$CPU_NUM ))
 do
@@ -23,7 +25,7 @@ do
     
     #Submit your job with qsub, you can pass varialbes to your script.
     #NOTE: the varialbles can not be path, maybe I miss it.
-    qsub -v RUN_NUMBER=$RUN_NUMBER $PATH_GATE_MACRO"/ihep_cluster_singlecore_job_pbs.sh"
+    qsub -v RUN_NUMBER=$RUN_NUMBER $PATH_SINGLE_CORE_JOB_SH
     let i++
 done
 

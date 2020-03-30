@@ -37,7 +37,7 @@ This doc shows how to run GATE locally and using IHEP cluster, the detailed setu
 
   3) After you have set up all the parameters in your local computer, then you can copy it to the ihep cluster using the following commands:
 
-  scp -rv * mabo@192.168.180.21:/data/simulation/home/mabo/software/src/gate/ihep_human_tof_pet_jd/
+  scp -rv * mabo@192.168.180.21:/data/simulation/home/mabo/software/src/gate/ihep_human_tof_pet_sz/
 
   4): submit your job: 
     source ihep_cluster_multicore_job_pbs.sh
@@ -47,7 +47,7 @@ This doc shows how to run GATE locally and using IHEP cluster, the detailed setu
   6): use qdel to stop your job; 
 
   7): After the simulation, copy the data back to your local desk using:
-    scp -rv  mabo@192.168.180.21:/data/simulation/home/mabo/software/src/gate/ihep_human_tof_pet_jd/results/* ./
+    scp -rv  mabo@192.168.180.21:/data/simulation/home/mabo/software/src/gate/ihep_human_tof_pet_sz/results/* ./
 
  8) Now everything is done, you can upload the results using IHEPBOX.
 
