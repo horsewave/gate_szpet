@@ -24,7 +24,7 @@ GATE_MAIN_MACRO="/main_human_szpet_tof_multi_cpu.mac"
 PATH_GATE_MAIN_MACRO=$PATH_GATE_MACRO$GATE_MAIN_MACRO
 
 #Time resolution for TOF which is also a variable in the digitizer.mac.
-TIME_RES=30
+TIME_RES=200
 GAMMA_NUM=20000000
 
 #LOG name 
@@ -32,7 +32,8 @@ RUN_LOG_PART=$PATH_GATE_MACRO"/results/GATE_log"
 RUN_LOG=$RUN_LOG_PART"_"$TIME_RES"_ps_"$RUN_NUMBER
 
 #the output name of your simulation.Also, mustbe absolute path.
-OUTPUT_NAME_PART="/results/human_szpet_tof_"
+#OUTPUT_NAME_PART="/results/human_szpet_point_source_tof_"
+OUTPUT_NAME_PART="/results/human_szpet_cyl_to_sphere_1to4_source_tof_"
 OUTPUT_NAME=$PATH_GATE_MACRO$OUTPUT_NAME_PART$TIME_RES"ps_"$RUN_NUMBER
 
  Gate -a [RUN_NUMBER,$RUN_NUMBER][TOF,$TIME_RES][PATH_GATE_MACRO,$PATH_GATE_MACRO][OUTPUT_NAME,$OUTPUT_NAME][GAMMA_NUM,$GAMMA_NUM]  $PATH_GATE_MAIN_MACRO  >>$RUN_LOG

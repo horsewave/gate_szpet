@@ -9,13 +9,13 @@
 #### acount
 #### 3 .1: Build your own .gitignore, and this
 #### .gitignore must add into git;
- add .gitignore
+ # add .gitignore
 
 #### 3.2: add other files to stage area
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG=" fix a bug in source.mac which caused by  uncommented comments    "
+ COMMIT_TAG=" add single cpu gate macro   "
  git commit -m "$COMMIT_TAG"
 
 
