@@ -15,7 +15,8 @@
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG=" add single cpu gate macro   "
+ COMMIT_TAG="fix the bug with sphere to background actual ration, by comment the command: #/gate/application/setTotalNumberOfPrimaries 100000
+  "
  git commit -m "$COMMIT_TAG"
 
 

@@ -14,7 +14,8 @@
 
 
 /gate/source/addSource   background
-/gate/source/background/setActivity   494322 becquerel
+#/gate/source/background/setActivity   494322 becquerel
+/gate/source/background/setActivity   49432200 becquerel
 /gate/source/background/gps/particle  gamma
 /gate/source/background/gps/energytype Mono
 /gate/source/background/setType backtoback
@@ -38,7 +39,8 @@
 
 
 /gate/source/addSource   sphere10
-/gate/source/sphere10/setActivity    21 becquerel
+#/gate/source/sphere10/setActivity    21 becquerel
+/gate/source/sphere10/setActivity    2100 becquerel
 /gate/source/sphere10/gps/particle  gamma
 /gate/source/sphere10/gps/energytype Mono
 /gate/source/sphere10/setType backtoback
@@ -52,7 +54,8 @@
 /gate/source/list
 
 /gate/source/addSource   sphere13
-/gate/source/sphere13/setActivity    46 becquerel
+#/gate/source/sphere13/setActivity    46 becquerel
+/gate/source/sphere13/setActivity    4600 becquerel
 /gate/source/sphere13/gps/particle  gamma
 /gate/source/sphere13/gps/energytype Mono
 /gate/source/sphere13/setType backtoback
@@ -66,7 +69,8 @@
 /gate/source/list
 
 /gate/source/addSource   sphere17
-/gate/source/sphere17/setActivity    103 becquerel
+#/gate/source/sphere17/setActivity    103 becquerel
+/gate/source/sphere17/setActivity    10300 becquerel
 /gate/source/sphere17/gps/particle  gamma
 /gate/source/sphere17/gps/energytype Mono
 /gate/source/sphere17/setType backtoback
@@ -80,7 +84,8 @@
 /gate/source/list
 
 /gate/source/addSource   sphere22
-/gate/source/sphere22/setActivity    223 becquerel
+/gate/source/sphere22/setActivity    22300 becquerel
+#/gate/source/sphere22/setActivity    223 becquerel
 
 /gate/source/sphere22/gps/particle  gamma
 /gate/source/sphere22/gps/energytype Mono
