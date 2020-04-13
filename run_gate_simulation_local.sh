@@ -25,7 +25,7 @@ OUTPUT_NAME_PART="results/human_szpet_tof_"
 
 #Time resolution for TOF which is also a variable in the digitizer.mac.
 TIME_RES=30
-GAMMA_NUM=100000
+# GAMMA_NUM=100000
 
 CPU_NUM=1
 

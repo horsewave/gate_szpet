@@ -15,8 +15,7 @@
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG="fix the bug with sphere to background actual ration, by comment the command: #/gate/application/setTotalNumberOfPrimaries 100000
-  "
+ COMMIT_TAG=" point source with only single transverse slice  "
  git commit -m "$COMMIT_TAG"
 
 

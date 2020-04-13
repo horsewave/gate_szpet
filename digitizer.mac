@@ -21,10 +21,10 @@
 /gate/digitizer/Coincidences/minSectorDifference  14 
 /gate/digitizer/Coincidences/MultiplesPolicy  killAll 
 
-#/gate/digitizer/name delay
-#/gate/digitizer/insert coincidenceSorter
-#/gate/digitizer/delay/setWindow 6. ns
-#/gate/digitizer/delay/setOffset 500. ns
-#/gate/digitizer/delay/minSectorDifference 14 
-#/gate/digitizer/delay/MultiplesPolicy  killAll  
-#/gate/digitizer/delay/MultiplesPolicy  takeWinnerOfGoods
+/gate/digitizer/name delay
+/gate/digitizer/insert coincidenceSorter
+/gate/digitizer/delay/setWindow 6. ns
+/gate/digitizer/delay/setOffset 500. ns
+/gate/digitizer/delay/minSectorDifference 14
+/gate/digitizer/delay/MultiplesPolicy  killAll
+/gate/digitizer/delay/MultiplesPolicy  takeWinnerOfGoods

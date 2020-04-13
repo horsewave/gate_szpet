@@ -1,7 +1,7 @@
 #   O U T P U T
 /gate/output/ascii/enable
 /gate/output/ascii/setFileName run_single_cpu_test
-/gate/output/ascii/setOutFileSizeLimit  400000000000
+/gate/output/ascii/setOutFileSizeLimit  1000000000
 /gate/output/ascii/setOutFileHitsFlag 0
 /gate/output/ascii/setOutFileSinglesFlag 0
 /gate/output/ascii/setOutFileCoincidencesFlag 1

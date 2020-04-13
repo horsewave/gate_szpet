@@ -1,11 +1,11 @@
 #   O U T P U T
 /gate/output/ascii/enable
 /gate/output/ascii/setFileName {OUTPUT_NAME}
-/gate/output/ascii/setOutFileSizeLimit  400000000000
+/gate/output/ascii/setOutFileSizeLimit  1000000000
 /gate/output/ascii/setOutFileHitsFlag 0
 /gate/output/ascii/setOutFileSinglesFlag 0
 /gate/output/ascii/setOutFileCoincidencesFlag 1
-#/gate/output/ascii/setOutFiledelayFlag 1
+/gate/output/ascii/setOutFiledelayFlag 1
 
 /gate/output/root/enable
 #/gate/output/root/disable
@@ -13,7 +13,7 @@
 /gate/output/root/setRootHitFlag 0
 /gate/output/root/setRootSinglesFlag 0
 /gate/output/root/setRootCoincidencesFlag 1
-#/gate/output/root/setRootdelayFlag 1
+/gate/output/root/setRootdelayFlag 1
 
 #   R A N D O M
 # JamesRandom Ranlux64 MersenneTwister
