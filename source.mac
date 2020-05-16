@@ -1,7 +1,8 @@
 /gate/source/addSource point_source
 # The total activity of the source is set
 #/gate/source/point_source/setActivity 0.0000001 Ci
-/gate/source/point_source/setActivity 1000000 Bq
+; /gate/source/point_source/setActivity 1000000 Bq
+/gate/source/point_source/setActivity 100Bq
 # The source emits pairs of particles back-to-back
 /gate/source/point_source/setType backtoback
 # The particles emitted by the source are gammas
@@ -14,7 +15,7 @@
 /gate/source/point_source/gps/type Volume
 /gate/source/point_source/gps/shape Sphere
 /gate/source/point_source/gps/radius 0.1 mm
-/gate/source/point_source/gps/centre 0. 0. 0. cm
+/gate/source/point_source/gps/centre 0. 0. 0.17 cm
 # The angular distribution of emission angles is isotropic
 /gate/source/point_source/gps/angtype iso
 

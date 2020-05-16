@@ -24,7 +24,7 @@ RUN_LOG_PART=$PATH_GATE_MACRO"results/GATE_log"
 OUTPUT_NAME_PART="results/human_szpet_tof_"
 
 #Time resolution for TOF which is also a variable in the digitizer.mac.
-TIME_RES=30
+TIME_RES=300
 # GAMMA_NUM=100000
 
 CPU_NUM=1

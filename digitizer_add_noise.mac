@@ -16,6 +16,22 @@
 /gate/digitizer/Singles/insert timeResolution 
 /gate/digitizer/Singles/timeResolution/setTimeResolution {TOF}. ps 
 
+
+###Noise
+/gate/distributions/name energy_distrib
+/gate/distributions/insert Gaussian
+/gate/distributions/energy_distrib/setMean 511 keV
+/gate/distributions/energy_distrib/setSigma 10 keV
+
+/gate/distributions/name dt_distrib
+/gate/distributions/insert Exponential
+/gate/distributions/dt_distrib/setLambda 1 mus
+
+/gate/digitizer/Singles/insert noise
+/gate/digitizer/Singles/noise/setDeltaTDistribution dt_distrib
+/gate/digitizer/Singles/noise/setEnergyDistribution energy_distrib
+
+
 #	C O I N C I    S O R T E R 
 /gate/digitizer/Coincidences/setWindow 6. ns
 /gate/digitizer/Coincidences/minSectorDifference  14 

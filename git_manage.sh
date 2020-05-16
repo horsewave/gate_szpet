@@ -15,7 +15,7 @@
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG=" point source with only single transverse slice  "
+ COMMIT_TAG=" different crytal length   "
  git commit -m "$COMMIT_TAG"
 
 

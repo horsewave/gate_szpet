@@ -2,16 +2,16 @@
 /gate/output/ascii/enable
 /gate/output/ascii/setFileName run_single_cpu_test
 /gate/output/ascii/setOutFileSizeLimit  1000000000
-/gate/output/ascii/setOutFileHitsFlag 0
-/gate/output/ascii/setOutFileSinglesFlag 0
+/gate/output/ascii/setOutFileHitsFlag 1
+/gate/output/ascii/setOutFileSinglesFlag 1
 /gate/output/ascii/setOutFileCoincidencesFlag 1
 #/gate/output/ascii/setOutFiledelayFlag 1
 
 /gate/output/root/enable
 #/gate/output/root/disable
 /gate/output/root/setFileName  run_single_cpu_test
-/gate/output/root/setRootHitFlag 0
-/gate/output/root/setRootSinglesFlag 0
+/gate/output/root/setRootHitFlag 1
+/gate/output/root/setRootSinglesFlag 1
 /gate/output/root/setRootCoincidencesFlag 1
 #/gate/output/root/setRootdelayFlag 1
 
