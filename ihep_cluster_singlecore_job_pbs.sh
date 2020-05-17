@@ -24,7 +24,7 @@ GATE_MAIN_MACRO="/main_human_szpet_tof_multi_cpu.mac"
 PATH_GATE_MAIN_MACRO=$PATH_GATE_MACRO$GATE_MAIN_MACRO
 
 #Time resolution for TOF which is also a variable in the digitizer.mac.
-TIME_RES=300
+TIME_RES=50
 # GAMMA_NUM=20000000
 
 #LOG name 

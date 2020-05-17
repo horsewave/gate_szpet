@@ -1,38 +1,34 @@
+ #Description:derenzo phantom with all the materials setting to vacuum 
+# to eliminate the effects of scaater and attenuation.
+# ### the outer cylinder dimater is 180mm and
+###the diameter of the wells are: 7.5, 6.0, 4.5, 3.75, 3, 2.4mm.
 
-#  *********************************************************************
-#  * DISCLAIMER                                                        *
-#  *                                                                   *
-#  * Neither the authors of this software system, nor their employing  *
-#  * institutes, nor the agencies providing financial support for this *
-#  * work make any representation or warranty, express or implied,     *
-#  * regarding this software system or assume any liability for its    *
-#  * use.                                                              *
-#  *                                                                   *
-#  * This code implementation is the intellectual property of the      *
-#  * OpenGATE collaboration.                                           *
-#  * By copying, distributing or modifying the Program (or any work    *
-#  * based on the Program) you indicate your acceptance of this        *
-#  * statement, and all its terms.                                     *
-#  *********************************************************************
-#
-#  The following phantom is Gate representation of the 
-#  NEMA 2-2001 IQ Phantom.  The dimensions of this phantom 
-#  are taken directly from "NEMA NU 2, Chapter 7, 2001".
-#  
-#   
+
+#Editor:Bo Ma
+#date:2020-05-16
+#Email:mabo@ihep.ac.cn
+#Tel:010-88235869
+#Cell:15210606357
+
+#Version:v1.0
+#---------------
+
 #       P H A N T O M   G E O M E T R Y
-/gate/world/daughters/name NEMA_IQ
-/gate/world/daughters/insert box
-/gate/NEMA_IQ/placement/setTranslation 0.0 0.0 0.0 cm
-/gate/NEMA_IQ/geometry/setXLength 30. cm
-/gate/NEMA_IQ/geometry/setYLength 30. cm
-/gate/NEMA_IQ/geometry/setZLength 22. cm
-/gate/NEMA_IQ/setMaterial Air
-/gate/NEMA_IQ/vis/forceWireframe
-/gate/NEMA_IQ/vis/setColor gray
-/gate/NEMA_IQ/vis/setVisible 0
+/gate/world/daughters/name cyl_phantom
+/gate/world/daughters/insert cylinder
+/gate/cyl_phantom/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/cyl_phantom/geometry/setRmax 9.0 cm
+/gate/cyl_phantom/geometry/setRmin  0.0 cm
+/gate/cyl_phantom/geometry/setHeight 20.0 cm
+/gate/cyl_phantom/geometry/setPhiStart 0. deg
+/gate/cyl_phantom/geometry/setDeltaPhi 360. deg
+/gate/cyl_phantom/setMaterial Vacuum
+/gate/cyl_phantom/vis/forceWireframe
+#/gate/cyl_phantom/vis/forceSolid
+/gate/cyl_phantom/vis/setColor green
+/gate/cyl_phantom/vis/setVisible 1
 
 
 #      A t t a c h   P h a n t o m
-/gate/NEMA_IQ/attachPhantomSD
+/gate/cyl_phantom/attachPhantomSD
 
