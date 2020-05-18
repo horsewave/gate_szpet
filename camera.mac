@@ -13,8 +13,7 @@
 /gate/cylindricalPET/daughters/name head
 /gate/cylindricalPET/daughters/insert box
 /gate/head/placement/setTranslation 456. 0.0 0.0 mm
-#/gate/head/geometry/setXLength 25.  mm
-/gate/head/geometry/setXLength 15.  mm
+/gate/head/geometry/setXLength 10.  mm
 /gate/head/geometry/setYLength 39.6 mm
 /gate/head/geometry/setZLength 160. mm
 /gate/head/setMaterial Air
@@ -39,8 +38,7 @@
 /gate/head/daughters/name block
 /gate/head/daughters/insert box
 /gate/block/placement/setTranslation 0.0 0.0 0.0 cm
-#/gate/block/geometry/setXLength 25. mm
-/gate/block/geometry/setXLength 15. mm
+/gate/block/geometry/setXLength 10. mm
 /gate/block/geometry/setYLength 39.6 mm
 /gate/block/geometry/setZLength 39.6 mm
 /gate/block/setMaterial Polyethylene
@@ -62,8 +60,7 @@
 /gate/block/daughters/name LYSO
 /gate/block/daughters/insert box
 /gate/LYSO/placement/setTranslation 0.0 0.0 0.0 cm
-#/gate/LYSO/geometry/setXLength  25. mm
-/gate/LYSO/geometry/setXLength  15. mm
+/gate/LYSO/geometry/setXLength  10. mm
 /gate/LYSO/geometry/setYLength  3.5 mm
 /gate/LYSO/geometry/setZLength  3.5 mm
 /gate/LYSO/setMaterial LSO

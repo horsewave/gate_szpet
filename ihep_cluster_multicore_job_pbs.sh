@@ -13,7 +13,7 @@ SINGLE_CORE_JOB_SH="/ihep_cluster_singlecore_job_pbs.sh"
 PATH_SINGLE_CORE_JOB_SH=$PATH_GATE_MACRO$SINGLE_CORE_JOB_SH
 
 #set the cpu cores you want to use.
-CPU_NUM=10
+CPU_NUM=5
 i=1
 while(( ${i}<=$CPU_NUM ))
 do
