@@ -15,7 +15,7 @@
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG=" add a new branch of digitizer_noise for add noise in the digitizer   "
+ COMMIT_TAG=" cyl_to_sphere_1to8_cry_len_5mm_ew_350kev_noise_dtlambda_244ns"
  git commit -m "$COMMIT_TAG"
 
 

@@ -24,7 +24,7 @@ GATE_MAIN_MACRO="/main_human_szpet_tof_multi_cpu.mac"
 PATH_GATE_MAIN_MACRO=$PATH_GATE_MACRO$GATE_MAIN_MACRO
 
 #Time resolution for TOF which is also a variable in the digitizer.mac.
-TIME_RES=300
+TIME_RES=0
 # GAMMA_NUM=20000000
 
 #LOG name 
@@ -37,7 +37,9 @@ RUN_LOG=$RUN_LOG_PART"_"$TIME_RES"_ps_"$RUN_NUMBER
 # OUTPUT_NAME_PART="/results/human_szpet_point_source_central_single_slice_cry_len_15mm_ew_50kev_tof_"
 # OUTPUT_NAME_PART="/results/human_szpet_derenzo_source_cry_len_15mm_ew_50kev_tof_"
 # OUTPUT_NAME_PART="/results/chai_derenzo_source_cry_len_5mm_ew_50kev_tof_"
-OUTPUT_NAME_PART="/results/xuq_derenzo_source_cry_len_15mm_ew_50kev_tof_"
+# OUTPUT_NAME_PART="/results/xuq_derenzo_source_cry_len_15mm_ew_50kev_tof_"
+# OUTPUT_NAME_PART="/results/cyl_to_sphere_1to8_cry_len_5mm_ew_350kev_noise_dtlambda_244ns_tof_"
+OUTPUT_NAME_PART="/results/cyl_to_sphere_1to8_cry_len_5mm_ew_50kev_noise_dtlambda_null_tof_"
 # OUTPUT_NAME_PART="/results/human_szpet_cyl_to_sphere_1to8_cry_len_20mm_ew_350kev_tof_"
 OUTPUT_NAME=$PATH_GATE_MACRO$OUTPUT_NAME_PART$TIME_RES"ps_"$RUN_NUMBER
 
