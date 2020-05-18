@@ -15,7 +15,7 @@
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG=" different crytal length   "
+ COMMIT_TAG=" add a new branch of digitizer_noise for add noise in the digitizer   "
  git commit -m "$COMMIT_TAG"
 
 
@@ -38,7 +38,8 @@ git add .
 #  git config credential.helper store
  # https://github.com/horsewave/gate_szpet.git
 # # git remote add origin git@github.com:horsewave/root_macros.git
- git push -u origin master
+ # git push -u origin master
+ git push -u origin digitizer_noise
 
 # git push -u origin temp_patient_81
 # git config --global http.proxy 'socks5://127.0.0.1:1080'

@@ -1,8 +1,8 @@
 /gate/source/addSource point_source
 # The total activity of the source is set
 #/gate/source/point_source/setActivity 0.0000001 Ci
-; /gate/source/point_source/setActivity 1000000 Bq
-/gate/source/point_source/setActivity 100Bq
+#/gate/source/point_source/setActivity 1000000 Bq
+/gate/source/point_source/setActivity 100 Bq
 # The source emits pairs of particles back-to-back
 /gate/source/point_source/setType backtoback
 # The particles emitted by the source are gammas
