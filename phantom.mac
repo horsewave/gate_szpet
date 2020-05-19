@@ -1,8 +1,7 @@
- #Description:derenzo phantom with all the materials setting to vacuum 
+#Description:derenzo phantom with all the materials setting to vacuum 
 # to eliminate the effects of scaater and attenuation.
 # ### the outer cylinder dimater is 180mm and
-###the diameter of the wells are: 7.5, 6.0, 4.5, 3.75, 3, 2.4mm.
-
+###the diameter of the wells are: 6.0, 4.5, 3, 2.4, 1.6, 1mm.
 
 #Editor:Bo Ma
 #date:2020-05-16
@@ -13,6 +12,7 @@
 #Version:v1.0
 #---------------
 
+ 
 #       P H A N T O M   G E O M E T R Y
 /gate/world/daughters/name cyl_phantom
 /gate/world/daughters/insert cylinder

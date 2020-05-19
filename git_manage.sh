@@ -15,7 +15,7 @@
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG=" derenzo source for xu qiong   "
+ COMMIT_TAG=" derenzo source for chai pei"
  git commit -m "$COMMIT_TAG"
 
 

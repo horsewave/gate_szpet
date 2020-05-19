@@ -13,8 +13,8 @@ SINGLE_CORE_JOB_SH="/ihep_cluster_singlecore_job_pbs.sh"
 PATH_SINGLE_CORE_JOB_SH=$PATH_GATE_MACRO$SINGLE_CORE_JOB_SH
 
 #set the cpu cores you want to use.
-CPU_NUM=5
-i=1
+CPU_NUM=15
+i=11
 while(( ${i}<=$CPU_NUM ))
 do
 # NAME 表示要传到oneJob.sh里的文件名参数
