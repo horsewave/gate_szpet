@@ -16,11 +16,11 @@
 /gate/distributions/name energy_distrib
 /gate/distributions/insert Gaussian
 /gate/distributions/energy_distrib/setMean 511 keV
-/gate/distributions/energy_distrib/setSigma 100 keV
+/gate/distributions/energy_distrib/setSigma 200 keV
 /gate/distributions/name dt_distrib
 /gate/distributions/insert Exponential
 #/gate/distributions/dt_distrib/setLambda 7.57 mus
-/gate/distributions/dt_distrib/setLambda 244   ns
+/gate/distributions/dt_distrib/setLambda 2440   ns
 /gate/digitizer/Singles/insert noise
 /gate/digitizer/Singles/noise/setDeltaTDistribution dt_distrib
 /gate/digitizer/Singles/noise/setEnergyDistribution energy_distrib
