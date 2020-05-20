@@ -2,16 +2,16 @@
 /gate/output/ascii/enable
 /gate/output/ascii/setFileName {OUTPUT_NAME}
 /gate/output/ascii/setOutFileSizeLimit  1000000000
-/gate/output/ascii/setOutFileHitsFlag 1
-/gate/output/ascii/setOutFileSinglesFlag 1
+/gate/output/ascii/setOutFileHitsFlag 0
+/gate/output/ascii/setOutFileSinglesFlag 0
 /gate/output/ascii/setOutFileCoincidencesFlag 1
 /gate/output/ascii/setOutFiledelayFlag 1
 
 /gate/output/root/enable
 #/gate/output/root/disable
 /gate/output/root/setFileName {OUTPUT_NAME}
-/gate/output/root/setRootHitFlag 1
-/gate/output/root/setRootSinglesFlag 1
+/gate/output/root/setRootHitFlag 0
+/gate/output/root/setRootSinglesFlag 0
 /gate/output/root/setRootCoincidencesFlag 1
 /gate/output/root/setRootdelayFlag 1
 
@@ -25,9 +25,9 @@
 /gate/random/verbose 1
 
 #       S T A R T
-/gate/application/setTimeSlice     10  s
+/gate/application/setTimeSlice     500  s
 /gate/application/setTimeStart     0.     s
-/gate/application/setTimeStop      10   s
+/gate/application/setTimeStop      500   s
 
 #/gate/application/setTotalNumberOfPrimaries  {GAMMA_NUM} 
 #/gate/application/setTotalNumberOfPrimaries 100000
