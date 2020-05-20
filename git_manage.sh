@@ -15,9 +15,11 @@
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG=" cyl_to_sphere_1to8_cry_len_5mm_ew_350kev_noise_dtlambda_244ns"
+ COMMIT_TAG=" test sz-pet sensitivity with different crystal lengths"
  git commit -m "$COMMIT_TAG"
 
+# restore all the deleted files
+# git ls-files -d | xargs -i git checkout {}
 
 #### alias
 #git config --global alias.st status
@@ -39,7 +41,8 @@ git add .
  # https://github.com/horsewave/gate_szpet.git
 # # git remote add origin git@github.com:horsewave/root_macros.git
  # git push -u origin master
- git push -u origin digitizer_noise
+ # git push -u origin digitizer_noise
+ git push -u origin sensitivity_test
 
 # git push -u origin temp_patient_81
 # git config --global http.proxy 'socks5://127.0.0.1:1080'
