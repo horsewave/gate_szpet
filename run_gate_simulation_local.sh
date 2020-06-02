@@ -21,7 +21,7 @@ PATH_GATE_MAIN_MACRO=$PATH_GATE_MACRO$GATE_MAIN_MACRO
 RUN_LOG_PART=$PATH_GATE_MACRO"results/GATE_log"
 
 #the output name of your simulation.Also, mustbe absolute path.
-OUTPUT_NAME_PART="results/human_szpet_5mm_tof_"
+OUTPUT_NAME_PART="results/human_szpet_20mm_tof_"
 
 #Time resolution for TOF which is also a variable in the digitizer.mac.
 TIME_RES=0
