@@ -107,8 +107,6 @@
 #/gate/systems/cylindricalPET/module/attach module
 #/gate/systems/cylindricalPET/submodule/attach block
 /gate/systems/cylindricalPET/crystal/attach LYSO
-#/gate/systems/cylindricalPET/layer0/attach LSO
-#/gate/systems/cylindricalPET/layer1/attach BGO
 
 #	A T T A C H    C R Y S T A L  SD
 

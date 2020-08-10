@@ -8,11 +8,11 @@
 /gate/digitizer/Singles/blurring/setEnergyOfReference 511. keV
 
 /gate/digitizer/Singles/insert thresholder
-/gate/digitizer/Singles/thresholder/setThreshold 50. keV
+/gate/digitizer/Singles/thresholder/setThreshold 350. keV
 /gate/digitizer/Singles/insert upholder
-/gate/digitizer/Singles/upholder/setUphold 661. keV
+/gate/digitizer/Singles/upholder/setUphold 660. keV
 
-###Noise
+##Noise
 /gate/distributions/name energy_distrib
 /gate/distributions/insert Gaussian
 /gate/distributions/energy_distrib/setMean 511 keV
@@ -33,13 +33,13 @@
 
 
 #	C O I N C I    S O R T E R 
-/gate/digitizer/Coincidences/setWindow 6. ns
+/gate/digitizer/Coincidences/setWindow 2.5 ns
 /gate/digitizer/Coincidences/minSectorDifference  14 
 /gate/digitizer/Coincidences/MultiplesPolicy  killAll 
 
 /gate/digitizer/name delay
 /gate/digitizer/insert coincidenceSorter
-/gate/digitizer/delay/setWindow 6. ns
+/gate/digitizer/delay/setWindow 2.5 ns
 /gate/digitizer/delay/setOffset 500. ns
 /gate/digitizer/delay/minSectorDifference 14
 /gate/digitizer/delay/MultiplesPolicy  killAll

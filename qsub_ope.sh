@@ -7,8 +7,8 @@
 # Tel:010-88235869
 # Cell:15210606357
 
-CPU_NUM=9047
-i=9028
+CPU_NUM=10259
+i=10240
 while(( ${i}<=$CPU_NUM ))
 do
   qdel ${i}

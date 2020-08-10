@@ -15,7 +15,7 @@
 git add .
 
 #### 3.3: submitte the  commit 
- COMMIT_TAG=" cyl_to_sphere_1to8_cry_len_5mm_ew_350kev_noise_dtlambda_244ns"
+ COMMIT_TAG=" cyl_to_sphere_1to8_cry_len_5mm_ew_350kev, time window 2.5ns, NEMA standard dose of activity."
  git commit -m "$COMMIT_TAG"
 
 

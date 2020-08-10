@@ -8,23 +8,39 @@
 /gate/digitizer/Singles/blurring/setEnergyOfReference 511. keV
 
 /gate/digitizer/Singles/insert thresholder
-/gate/digitizer/Singles/thresholder/setThreshold 50. keV
+/gate/digitizer/Singles/thresholder/setThreshold 350. keV
 /gate/digitizer/Singles/insert upholder
-/gate/digitizer/Singles/upholder/setUphold 661. keV
+/gate/digitizer/Singles/upholder/setUphold 660. keV
+
+###Noise
+/gate/distributions/name energy_distrib
+/gate/distributions/insert Gaussian
+/gate/distributions/energy_distrib/setMean 511 keV
+/gate/distributions/energy_distrib/setSigma 100 keV
+/gate/distributions/name dt_distrib
+/gate/distributions/insert Exponential
+#/gate/distributions/dt_distrib/setLambda 7.57 mus
+/gate/distributions/dt_distrib/setLambda 244   ns
+/gate/digitizer/Singles/insert noise
+/gate/digitizer/Singles/noise/setDeltaTDistribution dt_distrib
+/gate/digitizer/Singles/noise/setEnergyDistribution energy_distrib
+
 
 #       T I M E     R E S O L U S I O N 
 /gate/digitizer/Singles/insert timeResolution 
 /gate/digitizer/Singles/timeResolution/setTimeResolution {TOF}. ps 
 
+
+
 #	C O I N C I    S O R T E R 
-/gate/digitizer/Coincidences/setWindow 6. ns
+/gate/digitizer/Coincidences/setWindow 2.5 ns
 /gate/digitizer/Coincidences/minSectorDifference  14 
 /gate/digitizer/Coincidences/MultiplesPolicy  killAll 
 
 /gate/digitizer/name delay
 /gate/digitizer/insert coincidenceSorter
-/gate/digitizer/delay/setWindow 6. ns
+/gate/digitizer/delay/setWindow 2.5 ns
 /gate/digitizer/delay/setOffset 500. ns
 /gate/digitizer/delay/minSectorDifference 14
 /gate/digitizer/delay/MultiplesPolicy  killAll
-/gate/digitizer/delay/MultiplesPolicy  takeWinnerOfGoods
+#/gate/digitizer/delay/MultiplesPolicy  takeWinnerOfGoods

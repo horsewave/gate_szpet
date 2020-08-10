@@ -1,36 +1,98 @@
-/gate/source/addSource point_source
-# The total activity of the source is set
-#/gate/source/point_source/setActivity 0.0000001 Ci
-/gate/source/point_source/setActivity 1000000 Bq
-# The source emits pairs of particles back-to-back
-/gate/source/point_source/setType backtoback
-# The particles emitted by the source are gammas
-/gate/source/point_source/gps/particle gamma
-# The gammas have an energy of 511 keV
-/gate/source/point_source/gps/energytype Mono
-/gate/source/point_source/gps/monoenergy 0.511 MeV
-# The source is a full sphere with radius 0.1 mm,
-# located at the centre of the FOV
-/gate/source/point_source/gps/type Volume
-/gate/source/point_source/gps/shape Sphere
-/gate/source/point_source/gps/radius 0.1 mm
-/gate/source/point_source/gps/centre 0. 0. 0. cm
-# The angular distribution of emission angles is isotropic
-/gate/source/point_source/gps/angtype iso
+######################
+#Description:  a cylindrical background source, four small hot spheres and two biggest cold spheres.
+  # the activity ratio between hot spheres and the background is: 8:1
+ # the activity of the background is 10Bq/mm3, and that of the hot spheres is 80bq/mm3
 
-# The parameters below mean that the source emits
-# at all angles along the z axis
-#/gate/source/point_source/gps/mintheta 0. deg
-#/gate/source/point_source/gps/maxtheta 180. deg
-# Uncomment the parameters below if you want the source
-# to emit in an XY (transverse) plane
-#/gate/source/point_source/gps/mintheta 90. deg
-#/gate/source/point_source/gps/maxtheta 90. deg
-# The parameters below mean that the source emits
-# at all angles in the transverse (XY) directions
-#/gate/source/point_source/gps/minphi 0. deg
-#/gate/source/point_source/gps/maxphi 360. deg
+#Editor:Bo Ma
+#date:2020/03/30 
+#Email:mabo@ihep.ac.cn
+#Tel:010-88235869
+#Cell:15210606357
+
+# Version:v1.0
+######################
 
 
-/gate/source/point_source/visualize 2000 red 3
+/gate/source/addSource   background
+/gate/source/background/setActivity   76743527. becquerel
+#/gate/source/background/setActivity   0.0020741493 Ci
+/gate/source/background/gps/particle  gamma
+/gate/source/background/gps/energytype Mono
+/gate/source/background/setType backtoback
+/gate/source/background/gps/monoenergy 0.511 MeV
+/gate/source/background/gps/type   Volume
+/gate/source/background/gps/shape  Cylinder
+/gate/source/background/gps/radius 14.7 cm
+/gate/source/background/gps/halfz  10.7 cm
+/gate/source/background/gps/angtype  iso
+/gate/source/background/gps/centre  0.0 0.0 0.0 cm
+/gate/source/background/gps/Forbid sphere10in
+/gate/source/background/gps/Forbid sphere13in
+/gate/source/background/gps/Forbid sphere17in
+/gate/source/background/gps/Forbid sphere22in
+/gate/source/background/gps/Forbid sphere28in
+/gate/source/background/gps/Forbid sphere37in
+
+#/gate/source/background/dump 1
+/gate/source/background/visualize 2000 yellow 3
 /gate/source/list
+
+
+/gate/source/addSource   sphere10
+/gate/source/sphere10/setActivity    22200. becquerel
+/gate/source/sphere10/gps/particle  gamma
+/gate/source/sphere10/gps/energytype Mono
+/gate/source/sphere10/setType backtoback
+/gate/source/sphere10/gps/monoenergy 0.511 MeV
+/gate/source/sphere10/gps/type   Volume
+/gate/source/sphere10/gps/shape  Sphere
+/gate/source/sphere10/gps/radius 0.5 cm
+/gate/source/sphere10/gps/angtype  iso
+/gate/source/sphere10/gps/centre  2.86 4.95366531 0.0 cm
+/gate/source/sphere10/visualize 2000 red 3
+/gate/source/list
+
+/gate/source/addSource   sphere13
+/gate/source/sphere13/setActivity    48774. becquerel
+/gate/source/sphere13/gps/particle  gamma
+/gate/source/sphere13/gps/energytype Mono
+/gate/source/sphere13/setType backtoback
+/gate/source/sphere13/gps/monoenergy 0.511 MeV
+/gate/source/sphere13/gps/type   Volume
+/gate/source/sphere13/gps/shape  Sphere
+/gate/source/sphere13/gps/radius 0.65 cm
+/gate/source/sphere13/gps/angtype  iso
+/gate/source/sphere13/gps/centre -2.86 4.95366531 0.0 cm
+/gate/source/sphere13/visualize 2000 red 3
+/gate/source/list
+
+/gate/source/addSource   sphere17
+/gate/source/sphere17/setActivity    109071. becquerel
+/gate/source/sphere17/gps/particle  gamma
+/gate/source/sphere17/gps/energytype Mono
+/gate/source/sphere17/setType backtoback
+/gate/source/sphere17/gps/monoenergy 0.511 MeV
+/gate/source/sphere17/gps/type   Volume
+/gate/source/sphere17/gps/shape  Sphere
+/gate/source/sphere17/gps/radius 0.85 cm
+/gate/source/sphere17/gps/angtype  iso
+/gate/source/sphere17/gps/centre  -5.72 0.0 0.0 cm
+/gate/source/sphere17/visualize 2000 red 3
+/gate/source/list
+
+/gate/source/addSource   sphere22
+/gate/source/sphere22/setActivity    236391. becquerel
+
+/gate/source/sphere22/gps/particle  gamma
+/gate/source/sphere22/gps/energytype Mono
+/gate/source/sphere22/setType backtoback
+/gate/source/sphere22/gps/monoenergy 0.511 MeV
+/gate/source/sphere22/gps/type   Volume
+/gate/source/sphere22/gps/shape  Sphere
+/gate/source/sphere22/gps/radius 1.1 cm
+/gate/source/sphere22/gps/angtype  iso
+/gate/source/sphere22/gps/centre  -2.86 -4.95366531 0.0 cm
+/gate/source/sphere22/visualize 2000 red 3
+/gate/source/list
+
+

@@ -25,7 +25,7 @@
 /gate/digitizer/Coincidences/setWindow 6. ns
 /gate/digitizer/Coincidences/minSectorDifference  14 
 /gate/digitizer/Coincidences/MultiplesPolicy  killAll 
-
+1
 /gate/digitizer/name delay
 /gate/digitizer/insert coincidenceSorter
 /gate/digitizer/delay/setWindow 6. ns

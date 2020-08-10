@@ -1,4 +1,3 @@
-
 #  *********************************************************************
 #  * DISCLAIMER                                                        *
 #  *                                                                   *
@@ -18,21 +17,121 @@
 #  The following phantom is Gate representation of the 
 #  NEMA 2-2001 IQ Phantom.  The dimensions of this phantom 
 #  are taken directly from "NEMA NU 2, Chapter 7, 2001".
+
+#---------------
+#Description: NEMA phantom with all the materials setting to vacuum 
+# to eliminate the effects of scaater and attenuation.
+
+#Editor:Bo Ma
+#date:2020/03/30 
+#Email:mabo@ihep.ac.cn
+#Tel:010-88235869
+#Cell:15210606357
+
+#Version:v1.0
+#---------------
+
 #  
 #   
 #       P H A N T O M   G E O M E T R Y
-/gate/world/daughters/name NEMA_IQ
-/gate/world/daughters/insert box
-/gate/NEMA_IQ/placement/setTranslation 0.0 0.0 0.0 cm
-/gate/NEMA_IQ/geometry/setXLength 30. cm
-/gate/NEMA_IQ/geometry/setYLength 30. cm
-/gate/NEMA_IQ/geometry/setZLength 22. cm
-/gate/NEMA_IQ/setMaterial Air
-/gate/NEMA_IQ/vis/forceWireframe
-/gate/NEMA_IQ/vis/setColor gray
-/gate/NEMA_IQ/vis/setVisible 0
+
+/gate/world/daughters/name cyl_background
+/gate/world/daughters/insert cylinder
+/gate/cyl_background/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/cyl_background/geometry/setRmax 15.0 cm
+/gate/cyl_background/geometry/setRmin  0.0 cm
+/gate/cyl_background/geometry/setHeight 70. cm
+/gate/cyl_background/geometry/setPhiStart 0. deg
+/gate/cyl_background/geometry/setDeltaPhi 360. deg
+/gate/cyl_background/setMaterial Vacuum
+/gate/cyl_background/vis/forceWireframe
+#/gate/cyl_background/vis/forceSolid
+/gate/cyl_background/vis/setColor cyan
+/gate/cyl_background/vis/setVisible 1
+
+
+# 10 mm Sphere
+/gate/cyl_background/daughters/name sphere10in
+/gate/cyl_background/daughters/insert sphere
+/gate/sphere10in/placement/setTranslation 2.86 4.95366531 0.0 cm
+/gate/sphere10in/geometry/setRmax 0.5 cm
+/gate/sphere10in/geometry/setRmin 0.0 cm
+/gate/sphere10in/setMaterial Vacuum
+#/gate/sphere10in/vis/forceWireframe
+/gate/sphere10in/vis/forceSolid  
+/gate/sphere10in/vis/setColor red
+
+
+# 13 mm Sphere
+/gate/cyl_background/daughters/name sphere13in
+/gate/cyl_background/daughters/insert sphere
+/gate/sphere13in/placement/setTranslation -2.86 4.95366531 0.0 cm
+/gate/sphere13in/geometry/setRmax 0.65 cm
+/gate/sphere13in/geometry/setRmin 0.0 cm
+/gate/sphere13in/setMaterial Vacuum
+#/gate/sphere13in/vis/forceWireframe
+/gate/sphere13in/vis/forceSolid
+/gate/sphere13in/vis/setColor red
+
+
+# 17 mm Sphere
+/gate/cyl_background/daughters/name sphere17in
+/gate/cyl_background/daughters/insert sphere
+/gate/sphere17in/placement/setTranslation -5.72 0.0 0.0 cm
+/gate/sphere17in/geometry/setRmax 0.85 cm
+/gate/sphere17in/geometry/setRmin 0.0 cm
+/gate/sphere17in/setMaterial Vacuum
+#/gate/sphere17in/vis/forceWireframe
+/gate/sphere17in/vis/forceSolid
+/gate/sphere17in/vis/setColor red
+
+
+# 22 mm Sphere Interior
+/gate/cyl_background/daughters/name sphere22in
+/gate/cyl_background/daughters/insert sphere
+/gate/sphere22in/placement/setTranslation -2.86 -4.95366531 0.0 cm
+/gate/sphere22in/geometry/setRmax 1.1 cm
+/gate/sphere22in/geometry/setRmin 0.0 cm
+/gate/sphere22in/setMaterial Vacuum
+#/gate/sphere22in/vis/forceWireframe
+/gate/sphere22in/vis/forceSolid
+/gate/sphere22in/vis/setColor red
+
+
+# 28 mm Sphere
+/gate/cyl_background/daughters/name sphere28in
+/gate/cyl_background/daughters/insert sphere
+/gate/sphere28in/placement/setTranslation 2.86 -4.95366531 0.0 cm
+/gate/sphere28in/geometry/setRmax 1.4 cm
+/gate/sphere28in/geometry/setRmin 0.0 cm
+/gate/sphere28in/setMaterial Vacuum
+#/gate/sphere28in/vis/forceWireframe
+/gate/sphere28in/vis/forceSolid
+/gate/sphere28in/vis/setColor green
+
+
+
+
+# 37 mm Sphere
+/gate/cyl_background/daughters/name sphere37in
+/gate/cyl_background/daughters/insert sphere
+/gate/sphere37in/placement/setTranslation 5.72 0.0 0.0 cm
+/gate/sphere37in/geometry/setRmax 1.85 cm
+/gate/sphere37in/geometry/setRmin 0.0 cm
+/gate/sphere37in/setMaterial Vacuum
+#/gate/sphere37in/vis/forceWireframe
+/gate/sphere37in/vis/forceSolid
+/gate/sphere37in/vis/setColor green
+
+
 
 
 #      A t t a c h   P h a n t o m
-/gate/NEMA_IQ/attachPhantomSD
+/gate/cyl_background/attachPhantomSD
+/gate/sphere10in/attachPhantomSD
+/gate/sphere13in/attachPhantomSD
+/gate/sphere17in/attachPhantomSD
+/gate/sphere22in/attachPhantomSD
+/gate/sphere28in/attachPhantomSD
+/gate/sphere37in/attachPhantomSD
 

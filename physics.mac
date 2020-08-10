@@ -41,5 +41,5 @@
 
 # Cuts for particle in NEMACylinder
 #/gate/physics/Gamma/SetCutInRegion      LYSO 1.0 cm
-/gate/physics/Electron/SetCutInRegion   LYSO 1.0 cm
-/gate/physics/Positron/SetCutInRegion   LYSO 1.0 cm
+#/gate/physics/Electron/SetCutInRegion   LYSO 1.0 cm
+#/gate/physics/Positron/SetCutInRegion   LYSO 1.0 cm
